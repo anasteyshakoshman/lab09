@@ -17,8 +17,8 @@ $ open https://git-scm.com
 
  Cоздание и установка значений переменных окружения
 ```ShellSession
-$ export GITHUB_USERNAME=Talkytitan5127   
-$ export GITHUB_EMAIL=pachagorbunoff@yandex.ru
+$ export GITHUB_USERNAME=anasteyshakoshman   
+$ export GITHUB_EMAIL=anastasiay.andreevnaa@gmail.com
 $ alias edit=nano
 ```
 
