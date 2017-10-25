@@ -16,7 +16,7 @@ $ open https://cmake.org/
 ## Tutorial
   Добавление переменной окружения        
 ```ShellSession
-$ export GITHUB_USERNAME=<имя_пользователя>
+$ export GITHUB_USERNAME=anasteyshakoshman
 ```
   Клонирование репозитория прошлой лабораторной работы в директорию lab04
 ```ShellSession
