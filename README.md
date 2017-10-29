@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/anasteyshakoshman/lab06.svg?branch=master)](https://travis-ci.org/anasteyshakoshman/lab06)
+[![Build Status](https://travis-ci.org/anasteyshakoshman/lab07.svg?branch=master)](https://travis-ci.org/anasteyshakoshman/lab07)
 
 ## Laboratory work VI
 
@@ -10,7 +10,7 @@ $ open https://github.com/philsquared/Catch
 
 ## Tasks
 
-- [x] 1. Создать публичный репозиторий с названием **lab06** на сервисе **GitHub**
+- [x] 1. Создать публичный репозиторий с названием **lab07** на сервисе **GitHub**
 - [x] 2. Выполнить инструкцию учебного материала
 - [x] 3. Ознакомиться со ссылками учебного материала
 - [x] 4. Составить отчет и отправить ссылку личным сообщением в **Slack**
@@ -23,10 +23,10 @@ $ export GITHUB_USERNAMEanasteyshakoshman
 
 Создание директории лабораторной на основе предыдущей
 ```ShellSession
-$ git clone https://github.com/${GITHUB_USERNAME}/Lab05 lab06
-$ cd lab06
+$ git clone https://github.com/${GITHUB_USERNAME}/Lab05 lab07
+$ cd lab07
 $ git remote remove origin
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab06
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab07
 ```
 
 Скачивание библиотеки Catch и создание main с включенной билиотекой
@@ -85,7 +85,7 @@ $ cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install -DBUILD_TESTS=ON
 $ cmake --build _build
 $ cmake --build _build --target test 
 Running tests...
-Test project /home/ilya/lab06/_build
+Test project /home/ilya/lab07/_build
     Start 1: check
 1/1 Test #1: check ............................  Passed   0.03 sec.
 
@@ -97,7 +97,7 @@ Total Test time (real) =  0.04 sec
 
 Изменение файлов
 ```ShellSession
-$ sed -i 's/lab05/lab06/g' README.md # замена "lab05" на "lab06"
+$ sed -i 's/lab05/lab07/g' README.md # замена "lab05" на "lab07"
 $ sed -i 's/\(DCMAKE_INSTALL_PREFIX=_install\)/\1 -DBUILD_TESTS=ON/' .travis.yml # дополнение
 $ sed -i '/cmake --build _build --target install/a\ #добавление строки после данной
 - cmake --build _build --target test #запуск теста после сборки
@@ -127,7 +127,7 @@ $ travis enable
 $ mkdir artifacts
 $ screencapture -T 20 artifacts/screenshot.jpg
 <Command>-T
-$ open https://github.com/${GITHUB_USERNAME}/lab06
+$ open https://github.com/${GITHUB_USERNAME}/lab07
 ```
 
 ## Report
