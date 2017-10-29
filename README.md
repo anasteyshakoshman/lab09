@@ -24,14 +24,14 @@ $ open https://travis-ci.org
 Присваиваем значения перменным GITHUB_USERNAME и GITHUB_TOKEN
 ```ShellSession
 $ export GITHUB_USERNAME=anasteyshakoshman
-$ export GITHUB_TOKEN=ZfDUubVZgv5sXPPWRkba
+$ export GITHUB_TOKEN=f0a9c2d645beebde5dccf5be61c72c65e612dd60
 ```
-Клонируем lab04 в lab05, переходим в lab05
+Клонируем lab04 в Lab05, переходим в Lab05
 ```ShellSession
-$ git clone https://github.com/${GITHUB_USERNAME}/lab04 lab05 #Клонируем
-$ cd lab05 #Переходим в lab05
+$ git clone https://github.com/${GITHUB_USERNAME}/lab04 Lab05 #Клонируем
+$ cd Lab05 #Переходим в Lab05
 $ git remote remove origin 
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab05 #Соединяем с репозиторием на сервере
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/Lab05 #Соединяем с репозиторием на сервере
 ```
 Создаем .travis.yml и заполняем его
 ```ShellSession
@@ -72,7 +72,7 @@ $ travis lint
 ```
 Вставляем значок 
 ```ShellSession
-$ ex -sc '1i|[![Build Status](https://travis-ci.org/YAKOVLENKO/lab05.svg?branch=master)](https://travis-ci.org/YAKOVLENKO/lab05)' -cx README.md
+$ex -sc '1i|[![Build Status](https://travis-ci.org/anasteyshakoshman/Lab05.svg?branch=master)](https://travis-ci.org/anasteyshakoshman/Lab05)' -cx README.md
 ```
 Выкладываем всё в репозиторий  
 ```ShellSession
@@ -99,12 +99,12 @@ $ travis show #Отображаем проект
 ```ShellSession
 $ cd ~/workspace/labs/
 $ export LAB_NUMBER=05
-$ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
-$ mkdir reports/lab${LAB_NUMBER}
-$ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
-$ cd reports/lab${LAB_NUMBER}
+$ git clone https://github.com/tp-labs/Lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
+$ mkdir reports/Lab${LAB_NUMBER}
+$ cp tasks/Lab${LAB_NUMBER}/README.md reports/Lab${LAB_NUMBER}/REPORT.md
+$ cd reports/Lab${LAB_NUMBER}
 $ edit REPORT.md
-$ gistup -m "lab${LAB_NUMBER}"
+$ gistup -m "Lab${LAB_NUMBER}"
 ```
 
 ## Links
