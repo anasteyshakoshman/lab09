@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/anasteyshakoshman/lab07.svg?branch=master)](https://travis-ci.org/anasteyshakoshman/lab07)
+[![Build Status](https://travis-ci.org/anasteyshakoshman/lab08.svg?branch=master)](https://travis-ci.org/anasteyshakoshman/lab08)
 
 
 ## Laboratory work VII
@@ -11,7 +11,7 @@ $ open https://www.stack.nl/~dimitri/doxygen/manual/index.html
 
 ## Tasks
 
-- [X] 1. Создать публичный репозиторий с названием **lab07** на сервисе **GitHub**
+- [X] 1. Создать публичный репозиторий с названием **lab08** на сервисе **GitHub**
 - [X] 2. Выполнить инструкцию учебного материала
 - [X] 3. Ознакомиться со ссылками учебного материала
 - [X] 4. Составить отчет и отправить ссылку личным сообщением в **Slack**
@@ -25,10 +25,10 @@ $ alias edit=vi
 
 
 ```ShellSession
-$ git clone https://github.com/${GITHUB_USERNAME}/lab06 lab07
-$ cd lab07
+$ git clone https://github.com/${GITHUB_USERNAME}/lab06 lab08
+$ cd lab08
 $ git remote remove origin
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab07
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab08
 ```
 Создание документации
 ```ShellSession
@@ -49,7 +49,7 @@ $ sed -i  's/\(OUTPUT_DIRECTORY.*=\).*$/\1 docs/g' docs/doxygen.conf #  Указ
 ```
 
 ```ShellSession
-$ sed -i '' 's/lab07/lab07/g' README.md
+$ sed -i '' 's/lab08/lab08/g' README.md
 ```
 
 ```ShellSession
@@ -83,7 +83,7 @@ $ git checkout master                 # возврат к ветке master
 $ mkdir artifacts && cd artifacts
 $ screencapture -T 10 screenshot.jpg # или png
 <Command>-T
-$ open https://${GITHUB_USERNAME}.github.io/lab07/print_8hpp_source.html    # открываем gh-page
+$ open https://${GITHUB_USERNAME}.github.io/lab08/print_8hpp_source.html    # открываем gh-page
 $ gdrive upload screenshot.jpg # или png
 $ SCREENSHOT_ID=`gdrive list | grep screenshot | awk '{ print $1; }'`
 $ gdrive share ${SCREENSHOT_ID} --role reader --type user --email rusdevops@gmail.com
