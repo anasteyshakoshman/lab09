@@ -28,7 +28,7 @@ $ alias gsed=sed # for *-nix system
 Скачиваем github-release
 ```ShellSession
 $ cd ${GITHUB_USERNAME}/workspace
-$ pushd .
+$ pushd .     - сохраняем текущую директорию в стек
 $ source scripts/activate
 $ go get github.com/aktau/github-release
 ```
